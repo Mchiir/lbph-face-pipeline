@@ -22,7 +22,7 @@ ID = input('Enter your ID: ').strip()
 print("Please get your face ready!")
 time.sleep(2)
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(1)
 cam.set(cv2.CAP_PROP_FRAME_WIDTH, FRAME_SIZE[0])
 cam.set(cv2.CAP_PROP_FRAME_HEIGHT, FRAME_SIZE[1])
 if not cam.isOpened():
